@@ -46,8 +46,25 @@ export default {
 </script>
 
 <style>
+.logo{
+  height: 35px;
+  margin: auto !important;
+  position: relative;
+}
+
 .bottom-nav {
     bottom: -1px !important;
+}
+
+.content{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.application.theme--light {
+    background: #ffffff !important;
+    color: rgba(0,0,0,.87);
 }
 </style>
 

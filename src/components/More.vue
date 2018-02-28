@@ -1,20 +1,13 @@
 <template>
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
-      <v-toolbar color="orange" dark>
-          <v-toolbar-side-icon></v-toolbar-side-icon>
-          <v-toolbar-title>My files</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-btn icon>
-            <v-icon>search</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon>view_module</v-icon>
-          </v-btn>
-      </v-toolbar>
-      <v-list two-line subheader>
-          <v-subheader inset>Folders</v-subheader>
-          <v-list-tile avatar v-for="item in items" :key="item.title" @click="">
+    <v-toolbar fixed color="white">
+		  <img class="logo" src="https://d1101gxsp27gd6.cloudfront.net/evaluasi-harga/img/logo-urban-gray.png" alt="">
+		</v-toolbar>
+      <v-list list>
+          <v-subheader inset>Fitur Lainnya</v-subheader>
+          <v-divider inset></v-divider>
+          <v-list-tile avatar v-for="item in features" :key="item.title" @click="">
             <v-list-tile-avatar>
               <v-icon :class="[item.iconClass]">{{ item.icon }}</v-icon>
             </v-list-tile-avatar>
@@ -24,13 +17,13 @@
             </v-list-tile-content>
             <v-list-tile-action>
               <v-btn icon ripple>
-                <v-icon color="grey lighten-1">info</v-icon>
+                <v-icon color="grey lighten-1">chevron_right</v-icon>
               </v-btn>
             </v-list-tile-action>
           </v-list-tile>
+          <v-subheader inset>UrbanIndo</v-subheader>
           <v-divider inset></v-divider>
-          <v-subheader inset>Files</v-subheader>
-          <v-list-tile v-for="item in items2" :key="item.title" avatar @click="">
+          <v-list-tile v-for="item in urbanindo" :key="item.title" avatar @click="">
             <v-list-tile-avatar>
               <v-icon :class="[item.iconClass]">{{ item.icon }}</v-icon>
             </v-list-tile-avatar>
@@ -40,9 +33,12 @@
             </v-list-tile-content>
             <v-list-tile-action>
               <v-btn icon ripple>
-                <v-icon color="grey lighten-1">info</v-icon>
+                <v-icon color="grey lighten-1">chevron_right</v-icon>
               </v-btn>
             </v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-btn block color="orange lighten-1" dark>Login</v-btn>
           </v-list-tile>
       </v-list>
     </v-flex>
@@ -53,16 +49,32 @@
   export default {
     data () {
       return {
-        items: [
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos', subtitle: 'Jan 9, 2014' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes', subtitle: 'Jan 17, 2014' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work', subtitle: 'Jan 28, 2014' }
+        features: [
+          { icon: 'place', iconClass: 'grey lighten-1 white--text', title: 'Pencarian Peta', subtitle: '' },
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Direktori Agen dan perusahaan', subtitle: '' },
+          { icon: 'developer_board', iconClass: 'grey lighten-1 white--text', title: 'Kalkulator KPR', subtitle: '' },
+          { icon: 'account_balance', iconClass: 'grey lighten-1 white--text', title: 'Pembiayaan KPR', subtitle: '' }
         ],
-        items2: [
-          { icon: 'assignment', iconClass: 'blue white--text', title: 'Vacation itinerary', subtitle: 'Jan 20, 2014' },
-          { icon: 'call_to_action', iconClass: 'amber white--text', title: 'Kitchen remodel', subtitle: 'Jan 10, 2014' }
+        urbanindo: [
+          { icon: 'help', iconClass: 'grey white--text', title: 'Tentang Kami', subtitle: '' },
+          { icon: 'sms', iconClass: 'grey white--text', title: 'Saran untuk Urbanindo', subtitle: '' }
         ]
       }
     }
   }
 </script>
+
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+.list{
+  width: 100%;
+}
+
+.logo{
+  height: 35px;
+  margin: auto !important;
+  position: relative;
+}
+</style>

@@ -176,11 +176,6 @@ li {
 a {
   color: #42b983;
 }
-.logo{
-  height: 35px;
-  margin: auto !important;
-  position: relative;
-}
 .search{
   margin-right: 0px !important;
   margin-left: 20px !important;
