@@ -3,7 +3,7 @@
       <v-layout column align-center>
         <v-toolbar fixed extended color="white">
           <img class="logo" src="https://d1101gxsp27gd6.cloudfront.net/evaluasi-harga/img/logo-urban-gray.png" alt="">
-          <!-- <v-toolbar-title dark color="teal" slot="extension">Title</v-toolbar-title> -->
+          <!-- <v-toolbar-title dark color="orange" slot="extension">Title</v-toolbar-title> -->
           <v-text-field class="search elevation-0" solo :append-icon="'search'" slot="extension" name="search" label="Rumah dijual di Bandung" ></v-text-field>
         </v-toolbar>
         <v-flex xs6>

@@ -1,91 +1,68 @@
 <template>
-    <v-slide-y-transition mode="out-in">
-      <v-layout column align-center>
-        <v-toolbar fixed color="white">
-          <img class="logo" src="https://d1101gxsp27gd6.cloudfront.net/evaluasi-harga/img/logo-urban-gray.png" alt="">
-          <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-            <v-icon color="grey">email</v-icon>
+  <v-layout row>
+    <v-flex xs12 sm6 offset-sm3>
+      <v-toolbar color="orange" dark>
+          <v-toolbar-side-icon></v-toolbar-side-icon>
+          <v-toolbar-title>My files</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-btn icon>
+            <v-icon>search</v-icon>
           </v-btn>
-        </v-toolbar>
-        <div class="content">
-          
-        </div>
-      </v-layout>
-    </v-slide-y-transition>
+          <v-btn icon>
+            <v-icon>view_module</v-icon>
+          </v-btn>
+      </v-toolbar>
+      <v-list two-line subheader>
+          <v-subheader inset>Folders</v-subheader>
+          <v-list-tile avatar v-for="item in items" :key="item.title" @click="">
+            <v-list-tile-avatar>
+              <v-icon :class="[item.iconClass]">{{ item.icon }}</v-icon>
+            </v-list-tile-avatar>
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
+            </v-list-tile-content>
+            <v-list-tile-action>
+              <v-btn icon ripple>
+                <v-icon color="grey lighten-1">info</v-icon>
+              </v-btn>
+            </v-list-tile-action>
+          </v-list-tile>
+          <v-divider inset></v-divider>
+          <v-subheader inset>Files</v-subheader>
+          <v-list-tile v-for="item in items2" :key="item.title" avatar @click="">
+            <v-list-tile-avatar>
+              <v-icon :class="[item.iconClass]">{{ item.icon }}</v-icon>
+            </v-list-tile-avatar>
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
+            </v-list-tile-content>
+            <v-list-tile-action>
+              <v-btn icon ripple>
+                <v-icon color="grey lighten-1">info</v-icon>
+              </v-btn>
+            </v-list-tile-action>
+          </v-list-tile>
+      </v-list>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
   export default {
-    data: () => ({
-      items: [
-        {
-          action: 'move_to_inbox',
-          title: 'Inbox'
-        },
-        {
-          action: 'send',
-          title: 'Sent'
-        },
-        {
-          action: 'delete',
-          title: 'Trash'
-        },
-        {
-          action: 'report',
-          title: 'Spam'
-        },
-        { divider: true },
-        { header: 'Labels' },
-        {
-          action: 'label',
-          title: 'Family'
-        },
-        {
-          action: 'label',
-          title: 'Friends'
-        },
-        {
-          action: 'label',
-          title: 'Work'
-        }
-      ]
-    })
+    data () {
+      return {
+        items: [
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos', subtitle: 'Jan 9, 2014' },
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes', subtitle: 'Jan 17, 2014' },
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work', subtitle: 'Jan 28, 2014' }
+        ],
+        items2: [
+          { icon: 'assignment', iconClass: 'blue white--text', title: 'Vacation itinerary', subtitle: 'Jan 20, 2014' },
+          { icon: 'call_to_action', iconClass: 'amber white--text', title: 'Kitchen remodel', subtitle: 'Jan 10, 2014' }
+        ]
+      }
+    }
   }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.logo{
-  height: 35px;
-  margin: auto !important;
-  position: relative;
-}
-.search{
-  margin-right: 0px !important;
-  margin-left: 20px !important;
-  margin-bottom: 20px !important;
-  margin-top: 20px !important;
-  /* border: 1px solid grey; */
-}
-.content{
-  margin-top: 60px;
-  margin-bottom: 60px;
-  width: 100%;
-}
-.card{
-  margin: 10px;
-}
-</style>

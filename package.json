@@ -16,12 +16,12 @@
     "clean-source": "rimraf README.md src webroot package.json"
   },
   "dependencies": {
-    "vuetify": "^0.17.6",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuetify": "^0.17.6"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
+    "autoprefixer": "^7.2.6",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
@@ -32,7 +32,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
-    "chalk": "^2.1.0",
+    "chalk": "^2.3.1",
     "chromedriver": "^2.33.1",
     "connect-history-api-fallback": "^1.4.0",
     "copy-webpack-plugin": "^4.1.1",
@@ -77,7 +77,7 @@
     "selenium-server": "^3.6.0",
     "semver": "^5.4.1",
     "shelljs": "^0.7.8",
-    "sinon": "^4.0.1",
+    "sinon": "^4.3.0",
     "sinon-chai": "^2.14.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
@@ -87,7 +87,7 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.2",
-    "webpack": "^3.7.1",
+    "webpack": "^3.11.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.19.1",
@@ -101,5 +101,16 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "cname": "nope.org",
+    "prep": [
+      "start"
+    ],
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
+  }
 }
