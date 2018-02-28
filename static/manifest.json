@@ -1,6 +1,6 @@
 {
-  "name": "vue-urban",
-  "short_name": "vue-urban",
+  "name": "Urbanindo",
+  "short_name": "Urbanindo",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/vue-urb/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  "theme_color": "#FFB74D"
 }
