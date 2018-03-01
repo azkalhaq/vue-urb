@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-content>
-      <router-view/>
+      <v-fade-transition>
+        <router-view/>
+      </v-fade-transition>
     </v-content>
     <v-bottom-nav fixed :value="true" color="white">
       <v-btn flat color="orange" to="/home">

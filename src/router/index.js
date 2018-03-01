@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import Account from '@/components/Account'
-import Add from '@/components/Add'
-import Favorites from '@/components/Favorites'
-import More from '@/components/More'
+import Home from '@/pages/Home'
+import Account from '@/pages/Account'
+import Add from '@/pages/Add'
+import Favorites from '@/pages/Favorites'
+import More from '@/pages/More'
+import Login from '@/pages/Login'
 
 Vue.use(Router)
 
@@ -39,6 +40,11 @@ export default new Router({
       path: '/more',
       name: 'More',
       component: More
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     }
   ]
 })

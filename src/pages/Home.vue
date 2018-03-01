@@ -1,5 +1,4 @@
 <template>
-    <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
         <v-toolbar fixed extended color="white">
           <img class="logo" src="https://d1101gxsp27gd6.cloudfront.net/evaluasi-harga/img/logo-urban-gray.png" alt="">
@@ -157,7 +156,6 @@
           </v-layout>
         </div>
       </v-layout>
-    </v-slide-y-transition>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -173,9 +171,6 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
-}
 .search{
   margin-right: 0px !important;
   margin-left: 20px !important;
@@ -184,8 +179,7 @@ a {
   /* border: 1px solid grey; */
 }
 .property-list{
-  margin-top: 120px;
-  margin-bottom: 60px;
+  margin-top: 60px;
   width: 100%;
 }
 .card{
