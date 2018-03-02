@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-content>
-      <router-view/>
+      <v-fade-transition>
+        <router-view/>
+      </v-fade-transition>
     </v-content>
     <v-bottom-nav fixed :value="true" color="white">
       <v-btn flat color="orange" to="/home">
@@ -12,7 +14,7 @@
         <span>Account</span>
         <v-icon>account_circle</v-icon>
       </v-btn>
-      <v-btn flat color="orange" to="/add">
+      <v-btn flat color="orange" to="/submit">
         <span>Jual</span>
         <v-icon>add_box</v-icon>
       </v-btn>
@@ -46,8 +48,25 @@ export default {
 </script>
 
 <style>
+.logo{
+  height: 35px;
+  margin: auto !important;
+  position: relative;
+}
+
 .bottom-nav {
     bottom: -1px !important;
+}
+
+.content{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.application.theme--light {
+    background: #ffffff !important;
+    color: rgba(0,0,0,.87);
 }
 </style>
 
