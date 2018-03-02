@@ -14,7 +14,7 @@
         <span>Account</span>
         <v-icon>account_circle</v-icon>
       </v-btn>
-      <v-btn flat color="orange" to="/add">
+      <v-btn flat color="orange" to="/submit">
         <span>Jual</span>
         <v-icon>add_box</v-icon>
       </v-btn>

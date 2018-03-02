@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home'
 import Account from '@/pages/Account'
-import Add from '@/pages/Add'
+import Submit from '@/pages/Submit'
 import Favorites from '@/pages/Favorites'
 import More from '@/pages/More'
 import Login from '@/pages/Login'
@@ -27,9 +27,9 @@ export default new Router({
       component: Account
     },
     {
-      path: '/add',
-      name: 'Add',
-      component: Add
+      path: '/submit',
+      name: 'Submit',
+      component: Submit
     },
     {
       path: '/favorites',

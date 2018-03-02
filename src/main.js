@@ -55,6 +55,9 @@ import '../node_modules/vuetify/src/stylus/app.styl'
 import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify, {
+  theme: {
+    accent: '#EF6C00'
+  },
   components: {
     Vuetify,
     VAlert,

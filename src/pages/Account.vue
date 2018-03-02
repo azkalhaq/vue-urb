@@ -63,6 +63,20 @@
                       :label="'Cari Iklan Anda'"
                       :append-icon="'search'"
                     ></v-text-field>
+                    <template v-if="tab.items.length === 0">
+                      <v-flex xs12 layout align-center justify-center class="ma-5">
+                        <img src="../assets/home.png" alt="">
+                      </v-flex>
+                      <v-flex xs12 layout align-center justify-center class="ma-1">
+                        <p>
+                          <center>
+                            Anda belum mempunyai properti untuk ditampilkan disini.
+                          <br> Punya properti yang ingin dijual?
+                          <br> <a to="/submit">Iklankan Properti</a>
+                          </center>           
+                        </p>
+                      </v-flex>
+                    </template>
                   </v-flex>
                 </v-layout>
               </v-card>
@@ -122,13 +136,13 @@
         model: null,
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         coins: [
-          { icon: 'edit', iconClass: 'grey lighten-1 white--text', title: 'Ubah Profil', subtitle: '' },
-          { icon: 'lock', iconClass: 'grey lighten-1 white--text', title: 'Ubah Password', subtitle: '' }
+          { icon: 'copyright', iconClass: 'grey lighten-1 white--text', title: 'Beli Koin', subtitle: '' },
+          { icon: 'data_usage', iconClass: 'grey lighten-1 white--text', title: 'Histori Pembelian Koin Saya', subtitle: '' }
         ],
         premiums: [
-          { icon: 'edit', iconClass: 'grey lighten-1 white--text', title: 'Ubah Profil', subtitle: '' },
-          { icon: 'lock', iconClass: 'grey lighten-1 white--text', title: 'Ubah Password', subtitle: '' },
-          { icon: 'lock', iconClass: 'grey lighten-1 white--text', title: 'Ubah Password', subtitle: '' }
+          { icon: 'loyalty', iconClass: 'grey lighten-1 white--text', title: 'Tukarkan Koin', subtitle: '' },
+          { icon: 'replay', iconClass: 'grey lighten-1 white--text', title: 'History Layanan Premium', subtitle: '' },
+          { icon: 'forward', iconClass: 'grey lighten-1 white--text', title: 'Perpanjang Masa Layanan', subtitle: '' }
         ],
         tabs: [
           {

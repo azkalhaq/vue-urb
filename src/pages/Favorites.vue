@@ -35,7 +35,9 @@
               :label="'Cari ' + tab.title"
               :append-icon="'search'"
             ></v-text-field>
-
+            <center class="ma-2">
+              <subheader>{{ 'Daftar ' + tab.title }}</subheader>
+            </center>
           </v-flex>
         </v-layout>
         </v-container>

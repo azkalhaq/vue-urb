@@ -7,7 +7,7 @@
       <v-list list>
           <v-list-tile avatar class="mb-4 mt-3">
           <v-flex xs12 text-xs-center layout align-center justify-center>
-            <v-avatar :tile="tile" :size="60" class="grey lighten-4" >
+            <v-avatar :size="60" class="grey lighten-4" >
               <img src="https://next.vuetifyjs.com/static/doc-images/lists/1.jpg" alt="avatar">
             </v-avatar>
             <v-list-tile-content class="pl-2">
