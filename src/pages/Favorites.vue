@@ -28,7 +28,7 @@
         <v-container grid-list-md>
         <v-layout row>
           <v-flex xs12>
-            <v-text-field
+            <v-text-field 
               solo
               v-model="tab.model"
               :name="'form-' + tab.id"
