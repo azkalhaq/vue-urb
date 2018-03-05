@@ -16,7 +16,7 @@
             </v-list-tile-content>
           </v-flex>
           </v-list-tile>
-          <v-list-tile avatar v-for="item in profiles" :key="item.title" @click="">
+          <v-list-tile avatar v-for="item in profiles" :key="item.title" @click="" :to="item.url">
             <v-list-tile-avatar>
               <v-icon :class="[item.iconClass]">{{ item.icon }}</v-icon>
             </v-list-tile-avatar>
@@ -32,7 +32,7 @@
           </v-list-tile>
           <v-subheader inset>Fitur Lainnya</v-subheader>
           <v-divider inset></v-divider>
-          <v-list-tile avatar v-for="item in features" :key="item.title" @click="">
+          <v-list-tile avatar v-for="item in features" :key="item.title" @click="" :to="item.url">
             <v-list-tile-avatar>
               <v-icon :class="[item.iconClass]">{{ item.icon }}</v-icon>
             </v-list-tile-avatar>
@@ -48,7 +48,7 @@
           </v-list-tile>
           <v-subheader inset>UrbanIndo</v-subheader>
           <v-divider inset></v-divider>
-          <v-list-tile v-for="item in urbanindo" :key="item.title" avatar @click="">
+          <v-list-tile v-for="item in urbanindo" :key="item.title" avatar @click="" :to="item.url">
             <v-list-tile-avatar>
               <v-icon :class="[item.iconClass]">{{ item.icon }}</v-icon>
             </v-list-tile-avatar>
@@ -75,18 +75,18 @@
     data () {
       return {
         profiles: [
-          { icon: 'edit', iconClass: 'grey lighten-1 white--text', title: 'Ubah Profil', subtitle: '' },
-          { icon: 'lock', iconClass: 'grey lighten-1 white--text', title: 'Ubah Password', subtitle: '' }
+          { url: '/update-profile', icon: 'edit', iconClass: 'grey lighten-1 white--text', title: 'Ubah Profil', subtitle: '' },
+          { url: '/change-password', icon: 'lock', iconClass: 'grey lighten-1 white--text', title: 'Ubah Password', subtitle: '' }
         ],
         features: [
-          { icon: 'place', iconClass: 'grey lighten-1 white--text', title: 'Pencarian Peta', subtitle: '' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Direktori Agen dan perusahaan', subtitle: '' },
-          { icon: 'developer_board', iconClass: 'grey lighten-1 white--text', title: 'Kalkulator KPR', subtitle: '' },
-          { icon: 'account_balance', iconClass: 'grey lighten-1 white--text', title: 'Pembiayaan KPR', subtitle: '' }
+          { url: '/map-search', icon: 'place', iconClass: 'grey lighten-1 white--text', title: 'Pencarian Peta', subtitle: '' },
+          { url: '/directory', icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Direktori Agen dan perusahaan', subtitle: '' },
+          { url: '/mortgage-calculator', icon: 'developer_board', iconClass: 'grey lighten-1 white--text', title: 'Kalkulator KPR', subtitle: '' },
+          { url: '/mortgage-financing', icon: 'account_balance', iconClass: 'grey lighten-1 white--text', title: 'Pembiayaan KPR', subtitle: '' }
         ],
         urbanindo: [
-          { icon: 'help', iconClass: 'grey white--text', title: 'Tentang Kami', subtitle: '' },
-          { icon: 'sms', iconClass: 'grey white--text', title: 'Saran untuk Urbanindo', subtitle: '' }
+          { url: '/about-us', icon: 'help', iconClass: 'grey white--text', title: 'Tentang Kami', subtitle: '' },
+          { url: '/suggestion', icon: 'sms', iconClass: 'grey white--text', title: 'Saran untuk Urbanindo', subtitle: '' }
         ]
       }
     }

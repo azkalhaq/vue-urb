@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "isPremium": true,
+      "name": "Andready",
+      "img": "https://next.vuetifyjs.com/static/doc-images/lists/1.jpg",
+      "contact": [ "08999359899" ],
+      "role": "Pemasang Iklan",
+      "location": "Jakarta, Jakarta Selatan",
+      "property": 8,
+      "sold": 0,
+      "rent": 1
+    },
+    {
+      "id": 2,
+      "isPremium": true,
+      "name": "Danang Ari Wibowo",
+      "img": "https://next.vuetifyjs.com/static/doc-images/lists/2.jpg",
+      "contact": [ "08999359899" ],
+      "role": "Pemasang Iklan",
+      "location": "Jakarta, Jakarta Pusat",
+      "property": 8,
+      "sold": 0,
+      "rent": 4
+    },
+    {
+      "id": 3,
+      "isPremium": true,
+      "name": "Firman",
+      "img": "https://next.vuetifyjs.com/static/doc-images/lists/3.jpg",
+      "contact": [ "08999359899" ],
+      "role": "Pemasang Iklan",
+      "location": "Jakarta, Jakarta Utara",
+      "property": 10,
+      "sold": 2,
+      "rent": 1
+    },
+    {
+      "id": 4,
+      "isPremium": true,
+      "name": "Joe Andready",
+      "img": "https://next.vuetifyjs.com/static/doc-images/lists/4.jpg",
+      "contact": [ "08999359899" ],
+      "role": "Pemasang Iklan",
+      "location": "Jakarta, Jakarta Selatan",
+      "property": 8,
+      "sold": 0,
+      "rent": 1
+    },
+    {
+      "id": 5,
+      "isPremium": true,
+      "name": "Ari Wibowo Adi",
+      "img": "https://next.vuetifyjs.com/static/doc-images/lists/5.jpg",
+      "contact": [ "08999359899" ],
+      "role": "Pemasang Iklan",
+      "location": "Jakarta, Jakarta Pusat",
+      "property": 8,
+      "sold": 0,
+      "rent": 4
+    },
+    {
+      "id": 6,
+      "isPremium": true,
+      "name": "Firman Ali",
+      "img": "https://next.vuetifyjs.com/static/doc-images/lists/3.jpg",
+      "contact": [ "08999359899" ],
+      "role": "Pemasang Iklan",
+      "location": "Jakarta, Jakarta Utara",
+      "property": 10,
+      "sold": 2,
+      "rent": 1
+    }
+]

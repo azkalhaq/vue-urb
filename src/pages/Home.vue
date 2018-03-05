@@ -23,7 +23,7 @@
                 <v-container fill-height fluid>
                   <v-layout fill-height>
                     <v-flex xs12 align-end flexbox>
-                      <span class="headline">Top 10 Australian beaches</span>
+                      <!-- <span class="headline">Top 10 Australian beaches</span> -->
                     </v-flex>
                   </v-layout>
                 </v-container>

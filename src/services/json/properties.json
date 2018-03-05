@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "isPremium": true,
+        "img": "https://picture.urbanindo.com/listing/280307111/13/75ac254d/rumah-baru-2-lantai-di-sukamulya-regency-100m-dari-jl-ters-pasteur/780/780.jpg",
+        "price": "Rp 1,36mily",
+        "title": "Rumah baru 2 lantai di Sukamulya Regency , 100m dari jl. Ters. Pasteur",
+        "description" : "Dijual Rumah baru 2 lantai di Sukamulya Regency di Cluster minimalis"
+    },
+    {
+        "id": 2,
+        "isPremium": false,
+        "img": "https://picture.urbanindo.com/listing/415439225/21/62b034bc/gegerkalong-cluster-baru-harga-sudah-all-in/780/780.jpg",
+        "price": "Rp 460jt",
+        "title": "Rumah baru 2 lantai di Sukamulya Regency , 100m dari jl. Ters. Pasteur",
+        "description" : "Dijual Rumah baru 2 lantai di Sukamulya Regency di Cluster minimalis"
+    },
+    {
+        "id": 3,
+        "isPremium": true,
+        "img": "https://picture.urbanindo.com/listing/617542533/03/56f2cc8f/kost-kostan-di-jual-babakan-jeruk-5-menit-ke-maranatha/780/780.jpg",
+        "price": "Rp 936jt",
+        "title": "Rumah baru 2 lantai di Sukamulya Regency , 100m dari jl. Ters. Pasteur",
+        "description" : "Dijual Rumah baru 2 lantai di Sukamulya Regency di Cluster minimalis"
+    },
+    {
+        "id": 4,
+        "isPremium": true,
+        "img": "https://picture.urbanindo.com/listing/689253533/01/86a6dc4b/rumah-idaman-lux-di-cipaku-setiabudi-dekat-geger-kalong-sukajadi/780/780.jpg",
+        "price": "Rp 1,76mily",
+        "title": "Rumah baru 2 lantai di Sukamulya Regency , 100m dari jl. Ters. Pasteur",
+        "description" : "Dijual Rumah baru 2 lantai di Sukamulya Regency di Cluster minimalis"
+    },
+    {
+        "id": 5,
+        "isPremium": false,
+        "img": "https://picture.urbanindo.com/listing/587968960/01/91a51919/rumah-idaman-di-pondok-hijau-setiabudi-dekat-geger-kalong-dan-sukajadi/780/780.jpg",
+        "price": "Rp 460jt",
+        "title": "Rumah baru 2 lantai di Sukamulya Regency , 100m dari jl. Ters. Pasteur",
+        "description" : "Dijual Rumah baru 2 lantai di Sukamulya Regency di Cluster minimalis"
+    },
+    {
+        "id": 6,
+        "isPremium": true,
+        "img": "https://picture.urbanindo.com/listing/883030165/01/66c51dc0/rumah-cantik-di-pondok-hijau-setiabudi-dekat-geger-kalong-dan-sukajadi/780/780.jpg",
+        "price": "Rp 536jt",
+        "title": "Rumah baru 2 lantai di Sukamulya Regency , 100m dari jl. Ters. Pasteur",
+        "description" : "Dijual Rumah baru 2 lantai di Sukamulya Regency di Cluster minimalis"
+    }
+]

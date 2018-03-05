@@ -1,7 +1,7 @@
-import properties from './json/properties';
+import properties from './json/properties'
 
 export default {
   getProperties: () => {
-    return properties;
+    return properties
   }
-};
+}
