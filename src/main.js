@@ -56,6 +56,7 @@ import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify, {
   theme: {
+    primary: '#E65100',
     accent: '#EF6C00'
   },
   components: {

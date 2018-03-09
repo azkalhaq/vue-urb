@@ -14,6 +14,7 @@ import MortgageCalculator from '@/pages/more/MortgageCalculator'
 import MortgageFinancing from '@/pages/more/MortgageFinancing'
 import Suggestion from '@/pages/more/Suggestion'
 import UpdateProfile from '@/pages/more/UpdateProfile'
+import DetailSearch from '@/pages/more/DetailSearch'
 
 Vue.use(Router)
 
@@ -33,6 +34,7 @@ export default new Router({
     { path: '/mortgage-calculator', name: 'Mortgage Calculator', component: MortgageCalculator },
     { path: '/mortgage-financing', name: 'Mortgage Financing', component: MortgageFinancing },
     { path: '/suggestion', name: 'Suggestion', component: Suggestion },
-    { path: '/update-profile', name: 'Update Profile', component: UpdateProfile }
+    { path: '/update-profile', name: 'Update Profile', component: UpdateProfile },
+    { path: '/detail-search', name: 'Detail Search', component: DetailSearch }
   ]
 })

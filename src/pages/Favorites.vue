@@ -29,6 +29,7 @@
         <v-layout row>
           <v-flex xs12>
             <v-text-field 
+              class="elevation-0 grey lighten-4"
               solo
               v-model="tab.model"
               :name="'form-' + tab.id"
